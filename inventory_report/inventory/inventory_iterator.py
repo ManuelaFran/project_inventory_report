@@ -8,7 +8,6 @@ class InventoryIterator(Iterator):
 
     def __next__(self):
         try:
-            print(self._data)
             report = self._data[self._current_report]
         except IndexError:
             raise StopIteration()
